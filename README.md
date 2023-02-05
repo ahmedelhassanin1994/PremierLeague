@@ -4,7 +4,7 @@
 
 * Data
 * Domain
-* Presentation along with
+* Presentation
 
 ![Screen Shot 2023-02-05 at 9 09 04 AM](https://user-images.githubusercontent.com/64086484/216833684-06dfbd8c-9d63-4f87-a017-b42985af2d82.png)
 ![Simulator Screen Shot - iPhone 13 Pro - 2023-02-04 at 03 24 55](https://user-images.githubusercontent.com/64086484/216833702-cf2840b4-9943-45ad-8049-2150f1ad5566.png)
