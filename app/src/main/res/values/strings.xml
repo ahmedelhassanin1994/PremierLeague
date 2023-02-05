@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">khabeer_task</string>
+    <string name="phone_num">Phone Number</string>
+    <string name="password">password</string>
+    <string name="signin">Sign In</string>
+    <string name="enter_phone">Please enter your phone</string>
+    <string name="phone_content">The phone number consists of 11 numbers</string>
+    <string name="enter_password">Please enter your  password</string>
+    <string name="password_content">Password consists of at least 8 numbers</string>
+    <string name="totlal_salary">Total salary :</string>
+
+</resources>

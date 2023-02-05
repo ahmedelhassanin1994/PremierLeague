@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">khabeer_task</string>
+    <string name="password">كلمة المرور</string>
+    <string name="signin">تسجيل الدخول</string>
+    <string name="enter_phone">برجاء ادخال رقم الموبيل</string>
+    <string name="phone_content">رقم التليفون يتكون من ١١ رقم</string>
+    <string name="enter_password">برجاء كتابة الرقم السري</string>
+    <string name="password_content">يتكون كلمة المرور من 8 أرقام علي الاقل</string>
+    <string name="phone_num">رقم الهاتف</string>
+    <string name="totlal_salary">اجمالي الراتب</string>
+
+</resources>
