@@ -1,7 +1,6 @@
 package com.raminabbasiiii.movies.util
 
 import androidx.recyclerview.widget.DiffUtil
-import com.raminabbasiiii.movies.domain.entities.Movie
 
 object MovieDiffCallback : DiffUtil.ItemCallback<Movie>() {
 

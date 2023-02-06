@@ -1,5 +1,7 @@
 package com.raminabbasiiii.movies.di
 
+import com.example.khabeer_task.features.data.data_source.local.MatchesDao
+import com.example.khabeer_task.features.data.data_source.local.MatchesDatabase
 import com.example.room.domain.usecase.Football_UseCase
 
 import com.google.gson.Gson
@@ -46,10 +48,12 @@ object AppModule {
     }
 
 
-//    @Singleton
-//    @Provides
-//    fun provideLocalDataSource(cache: Cache_Dao
-//    ) = LocalDataSourceImplementer(cache) as LocaleData
+    @Provides
+    fun providesPostDao(postDatabase: MatchesDatabase): MatchesDao =
+        postDatabase.getMatchesDao()
+
+
+
 
 
     @Singleton

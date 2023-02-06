@@ -6,8 +6,6 @@ import com.example.khabeer_task.features.domain.entities.*
 import com.example.khabeer_task.util.IntValidation
 import com.raminabbasiiii.movies.data.responeses.MovieDto
 import com.raminabbasiiii.movies.data.responeses.User_Response
-import com.raminabbasiiii.movies.domain.entities.Movie
-import com.raminabbasiiii.movies.domain.entities.MovieDetails
 import java.time.Duration
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
