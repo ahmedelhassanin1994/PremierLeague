@@ -11,61 +11,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
 
-fun MovieDto.toMovie(): Movie {
-    return Movie(
-        id = id,
-        title = title,
-        poster = poster,
-        year = year,
-        country = country,
-        rating = rating,
-        genres = genres,
-        images = images
-    )
-}
 
-fun MovieDto.toMovieDetails(): MovieDetails {
-    return MovieDetails(
-        id = id,
-        title = title,
-        poster = poster,
-        year = year,
-        country = country,
-        rating = rating,
-        rated = rated,
-        released = released,
-        runtime = runtime,
-        director = director,
-        writer = writer,
-        actors = actors,
-        plot = plot,
-        awards = awards,
-        votes = votes,
-        genres = genres,
-        images = images
-    )
-}
-
-
-fun User_Response.toUser(): User_Entities {
-    return User_Entities(
-        UserType = UserType,
-        Activation = Activation,
-        Token = Token,
-        UserRole = UserRole,
-        AccountRole = AccountRole,
-        AccountId = AccountId,
-        Success = Success,
-        Code = Code,
-        EnglishMessage = EnglishMessage,
-        ArabicMessage = ArabicMessage,
-        CurrentPage = CurrentPage,
-        IsArabic = IsArabic,
-        PageCount = PageCount,
-        VisitStatus = VisitStatus,
-
-    )
-}
 
 fun FootballResponse.toFootball(): Football_Entities {
     var list=  this.matches.map {
@@ -140,7 +86,7 @@ fun Matches.toMatches() : Matches_Entities{
     }.toList()
 
     return Matches_Entities(
-        id =this.id,
+        id_Matches =this.id,
         season = this.season!!.toSeason(),
 //        utcDate =calculateDifference(this.utcDate.toString()),
         utcDate =this.utcDate.toString(),
@@ -165,9 +111,9 @@ fun Matches.toMatches() : Matches_Entities{
 
 fun Competition.toCompetition() : Competition_Entities{
     return  Competition_Entities(
-        id=this.id,
+        id_Competition  =this.id,
         area =  this.area!!.toArea(),
-        name = this.name,
+        name_Competition = this.name,
         code = this.code,
         plan = this.plan,
         lastUpdated =this.lastUpdated,
@@ -178,13 +124,13 @@ fun Competition.toCompetition() : Competition_Entities{
 fun Area.toArea() : Area_Entities{
     return  Area_Entities(
         id=this.id,
-        name = this.name
+        name_Area = this.name
     )
 }
 
 fun Season.toSeason() : Season_Entities{
     return Season_Entities(
-        id=this.id,
+        id_Season =this.id,
         startDate=this.startDate,
         endDate=this.endDate,
         currentMatchday = this.currentMatchday,
@@ -212,50 +158,50 @@ fun Score.toScore() :Score_Entities{
 
 fun ExtraTime.toExtraTime() : ExtraTime_Entities{
     return ExtraTime_Entities(
-        homeTeam=this.homeTeam,
-        awayTeam=this.awayTeam,
+        homeTeam_ExtraTime =this.homeTeam,
+        awayTeam_ExtraTime =this.awayTeam,
     )
 }
 
 fun HalfTime.toHalfTime() : HalfTime_Entities{
     return HalfTime_Entities(
-     homeTeam=this.homeTeam,
-     awayTeam=this.awayTeam
+     homeTeam_HalfTime =this.homeTeam,
+     awayTeam_HalfTime =this.awayTeam
     )
 }
 
 fun FullTime.toFullTime() : FullTime_Entities{
     return FullTime_Entities(
-        homeTeam= IntValidation(this.homeTeam),
-        awayTeam= IntValidation(this.awayTeam)
+        homeTeam_FullTim = IntValidation(this.homeTeam),
+        awayTeam_FullTim = IntValidation(this.awayTeam)
     )
 }
 fun Penalties.toPenalties() : Penalties_Entities{
     return  Penalties_Entities(
-        homeTeam=this.homeTeam,
-        awayTeam=this.awayTeam,
+        homeTeam_Penalties =this.homeTeam,
+        awayTeam_Penalties =this.awayTeam,
     )
 }
 fun HomeTeam.toHomeTeam() : HomeTeam_Entities{
     return  HomeTeam_Entities(
-        id=this.id,
-        name=this.name
+        id_HomeTeam =this.id,
+        name_HomeTeam =this.name
     )
 }
 
 fun AwayTeam.toAwayTeam() : AwayTeam_Entities {
 
     return AwayTeam_Entities(
-        id=this.id,
-        name=this.name
+        id_AwayTeam =this.id,
+        name_AwayTeam =this.name
     )
 }
 
 
 fun Referees.toReferees() : Referees_Entities {
     return Referees_Entities(
-        id = this.id,
-        name = this.name,
+        id_Referees = this.id,
+        name_Referees = this.name,
         role = this.role,
         nationality = this.nationality,
     )
